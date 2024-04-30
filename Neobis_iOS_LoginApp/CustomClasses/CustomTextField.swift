@@ -22,11 +22,13 @@ class CustomTextField: UITextField {
     
     private func setupRightImageViewContainer() {
         // Create image view with the desired image
-       // let image = UIImage(named: "FluentEye")
-        let image = UIImage(systemName: "eye")
+        let image = UIImage(named: "Fluent Eye Filled")
+        //        let image = UIImage(systemName: "eye")
         imageView = UIImageView(image: image)
         imageView.tintColor = .gray // Optional: Set tint color if needed
         imageView.contentMode = .center
+        
+       
         
         // Set up right image view container
         rightImageViewContainer = UIView(frame: CGRect(x: 0, y: 0, width: 48, height: frame.size.height))
