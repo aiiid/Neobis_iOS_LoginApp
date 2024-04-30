@@ -13,9 +13,11 @@
 		E2326F012BDF83DC00CC4397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2326EFF2BDF83DC00CC4397 /* Main.storyboard */; };
 		E2326F032BDF83DF00CC4397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2326F022BDF83DF00CC4397 /* Assets.xcassets */; };
 		E2326F062BDF83DF00CC4397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2326F042BDF83DF00CC4397 /* LaunchScreen.storyboard */; };
-		E2326F102BDF934500CC4397 /* Urbanist-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2326F0E2BDF896700CC4397 /* Urbanist-VariableFont_wght.ttf */; };
 		E2326F122BDF9ABB00CC4397 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2326F112BDF9ABB00CC4397 /* CustomTextField.swift */; };
 		E2326F142BDFA1A800CC4397 /* UITextField + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2326F132BDFA1A800CC4397 /* UITextField + Ext.swift */; };
+		E2326F192BE0F7FF00CC4397 /* Urbanist-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2326F182BE0F7E800CC4397 /* Urbanist-Bold.ttf */; };
+		E2326F1A2BE0F7FF00CC4397 /* Urbanist-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2326F172BE0F7E800CC4397 /* Urbanist-Regular.ttf */; };
+		E2326F1C2BE1113C00CC4397 /* Urbanist-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2326F1B2BE1112700CC4397 /* Urbanist-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +29,11 @@
 		E2326F022BDF83DF00CC4397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2326F052BDF83DF00CC4397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2326F072BDF83DF00CC4397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2326F0E2BDF896700CC4397 /* Urbanist-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		E2326F112BDF9ABB00CC4397 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E2326F132BDFA1A800CC4397 /* UITextField + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Ext.swift"; sourceTree = "<group>"; };
+		E2326F172BE0F7E800CC4397 /* Urbanist-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Regular.ttf"; sourceTree = "<group>"; };
+		E2326F182BE0F7E800CC4397 /* Urbanist-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Bold.ttf"; sourceTree = "<group>"; };
+		E2326F1B2BE1112700CC4397 /* Urbanist-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 		E2326F0D2BDF894600CC4397 /* Project Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				E2326F0E2BDF896700CC4397 /* Urbanist-VariableFont_wght.ttf */,
+				E2326F1B2BE1112700CC4397 /* Urbanist-Medium.ttf */,
+				E2326F182BE0F7E800CC4397 /* Urbanist-Bold.ttf */,
+				E2326F172BE0F7E800CC4397 /* Urbanist-Regular.ttf */,
 			);
 			path = "Project Fonts";
 			sourceTree = "<group>";
@@ -159,9 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2326F062BDF83DF00CC4397 /* LaunchScreen.storyboard in Resources */,
-				E2326F102BDF934500CC4397 /* Urbanist-VariableFont_wght.ttf in Resources */,
+				E2326F1C2BE1113C00CC4397 /* Urbanist-Medium.ttf in Resources */,
+				E2326F192BE0F7FF00CC4397 /* Urbanist-Bold.ttf in Resources */,
 				E2326F032BDF83DF00CC4397 /* Assets.xcassets in Resources */,
 				E2326F012BDF83DC00CC4397 /* Main.storyboard in Resources */,
+				E2326F1A2BE0F7FF00CC4397 /* Urbanist-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,18 +17,16 @@ class CustomTextField: UITextField {
         super.awakeFromNib()
         
         setupRightImageViewContainer()
+        setupLeftPadding()
     }
     
     private func setupRightImageViewContainer() {
-        // Create image view with eye icon
-        imageView = UIImageView(image: UIImage(systemName: "eye"))
-        imageView.tintColor = .gray
+        // Create image view with the desired image
+       // let image = UIImage(named: "FluentEye")
+        let image = UIImage(systemName: "eye")
+        imageView = UIImageView(image: image)
+        imageView.tintColor = .gray // Optional: Set tint color if needed
         imageView.contentMode = .center
-        
-        // Add tap gesture recognizer
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(togglePasswordVisibility))
-        imageView.isUserInteractionEnabled = true
-        imageView.addGestureRecognizer(tapGesture)
         
         // Set up right image view container
         rightImageViewContainer = UIView(frame: CGRect(x: 0, y: 0, width: 48, height: frame.size.height))
@@ -40,12 +38,11 @@ class CustomTextField: UITextField {
         rightViewMode = .always
     }
     
-    @objc private func togglePasswordVisibility() {
-        isSecureTextEntry.toggle()
-        isPasswordVisible.toggle()
-        
-        // Change eye icon based on password visibility
-        let imageName = isPasswordVisible ? "eye.slash" : "eye"
-        imageView.image = UIImage(systemName: imageName)
+    private func setupLeftPadding(){
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        leftView = paddingView
+        leftViewMode = .always
     }
+    
+    
 }
