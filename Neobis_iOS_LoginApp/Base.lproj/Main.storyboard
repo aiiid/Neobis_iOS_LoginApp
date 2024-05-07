@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Neobis_iOS_LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Neobis_iOS_LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3Gw-lJ-saB">
-                                <rect key="frame" x="44.333333333333343" y="329" width="304.33333333333326" height="322.66666666666674"/>
+                                <rect key="frame" x="44.333333333333343" y="329" width="304.33333333333326" height="320"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Glad to see you, Again!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1J-DB-FyG">
                                         <rect key="frame" x="0.0" y="0.0" width="304.33333333333331" height="71.666666666666671"/>
@@ -31,75 +31,42 @@
                                         <color key="textColor" red="0.11764705882352941" green="0.13725490196078433" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="slx-4p-PqT">
-                                        <rect key="frame" x="0.0" y="89.000000000000014" width="304.33333333333331" height="160.33333333333337"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="M8L-Yd-EZB">
-                                                <rect key="frame" x="0.0" y="0.0" width="304.33333333333331" height="130"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7mt-WP-52B">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304.33333333333331" height="57.666666666666664"/>
-                                                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <color key="tintColor" red="0.90980392156862744" green="0.92549019607843142" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="textColor" red="0.51372549019607838" green="0.56862745098039214" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" red="0.90980392156862744" green="0.92549019607843142" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="8"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kJ4-cK-X8l" customClass="CustomTextField" customModule="Neobis_iOS_LoginApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="72.666666666666686" width="304.33333333333331" height="57.333333333333343"/>
-                                                        <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <color key="tintColor" red="0.90980392160000001" green="0.92549019610000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="textColor" red="0.51372549020000002" green="0.56862745100000001" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" red="0.90980392160000001" green="0.92549019610000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="8"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </textField>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="kJ4-cK-X8l" secondAttribute="bottom" id="0TU-u2-hax"/>
-                                                    <constraint firstItem="kJ4-cK-X8l" firstAttribute="leading" secondItem="M8L-Yd-EZB" secondAttribute="leading" id="5PD-u6-cJf"/>
-                                                    <constraint firstItem="7mt-WP-52B" firstAttribute="top" secondItem="M8L-Yd-EZB" secondAttribute="top" id="5jL-Q2-bso"/>
-                                                    <constraint firstAttribute="trailing" secondItem="kJ4-cK-X8l" secondAttribute="trailing" id="ANV-3d-2tL"/>
-                                                    <constraint firstItem="7mt-WP-52B" firstAttribute="leading" secondItem="M8L-Yd-EZB" secondAttribute="leading" id="NEj-uY-jJ5"/>
-                                                    <constraint firstAttribute="trailing" secondItem="7mt-WP-52B" secondAttribute="trailing" id="WM2-xv-v1E"/>
-                                                    <constraint firstAttribute="height" constant="130" id="naz-QW-eAx"/>
-                                                </constraints>
-                                            </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYR-o5-TXX">
-                                                <rect key="frame" x="189.66666666666666" y="144" width="114.66666666666666" height="16.333333333333343"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                <color key="textColor" red="0.41568627450980389" green="0.4392156862745098" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your email" borderStyle="roundedRect" placeholder="Enter your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7mt-WP-52B" customClass="CustomTextField" customModule="Neobis_iOS_LoginApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="86.666666666666686" width="304.33333333333331" height="56"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.90980392156862744" green="0.92549019607843142" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="M8L-Yd-EZB" secondAttribute="trailing" id="p7o-04-Bcn"/>
-                                            <constraint firstItem="M8L-Yd-EZB" firstAttribute="leading" secondItem="slx-4p-PqT" secondAttribute="leading" id="w3r-Y1-lHR"/>
+                                            <constraint firstAttribute="height" constant="56" id="lQJ-Yu-4Xr"/>
                                         </constraints>
-                                    </stackView>
+                                        <color key="textColor" red="0.51372549019607838" green="0.56862745098039214" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasRightImage" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your password" borderStyle="roundedRect" placeholder="Enter your password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srw-Zz-K1q" customClass="CustomTextField" customModule="Neobis_iOS_LoginApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="157.66666666666669" width="304.33333333333331" height="56"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.90980392160000001" green="0.92549019610000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="JCO-9Q-R9N"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.51372549020000002" green="0.56862745100000001" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasRightImage" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amG-zQ-yg4">
+                                        <rect key="frame" x="0.0" y="228.66666666666663" width="304.33333333333331" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAs-xd-e0E">
-                                        <rect key="frame" x="0.0" y="266.66666666666663" width="304.33333333333331" height="56"/>
+                                        <rect key="frame" x="0.0" y="264" width="304.33333333333331" height="56"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.13725490200000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="yx2-nq-eQr"/>
@@ -111,28 +78,31 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="slx-4p-PqT" firstAttribute="leading" secondItem="3Gw-lJ-saB" secondAttribute="leading" id="IIo-6a-OVt"/>
+                                    <constraint firstAttribute="trailing" secondItem="srw-Zz-K1q" secondAttribute="trailing" id="FJw-kZ-5aC"/>
+                                    <constraint firstAttribute="trailing" secondItem="7mt-WP-52B" secondAttribute="trailing" id="MF0-GV-Gcd"/>
+                                    <constraint firstItem="7mt-WP-52B" firstAttribute="leading" secondItem="3Gw-lJ-saB" secondAttribute="leading" id="Nyg-bz-HRD"/>
                                     <constraint firstItem="F1J-DB-FyG" firstAttribute="leading" secondItem="3Gw-lJ-saB" secondAttribute="leading" id="QHz-ry-NWo"/>
                                     <constraint firstAttribute="trailing" secondItem="WAs-xd-e0E" secondAttribute="trailing" id="VkW-vp-dvO"/>
-                                    <constraint firstAttribute="trailing" secondItem="slx-4p-PqT" secondAttribute="trailing" id="o3i-zz-qlR"/>
+                                    <constraint firstItem="srw-Zz-K1q" firstAttribute="leading" secondItem="3Gw-lJ-saB" secondAttribute="leading" id="laq-Ob-RtA"/>
                                     <constraint firstItem="WAs-xd-e0E" firstAttribute="leading" secondItem="3Gw-lJ-saB" secondAttribute="leading" id="t8r-Wu-WFF"/>
+                                    <constraint firstAttribute="trailing" secondItem="amG-zQ-yg4" secondAttribute="trailing" id="xc9-rm-4pN"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hUR-7U-2xt">
-                                <rect key="frame" x="54.666666666666657" y="771.66666666666663" width="284" height="20.333333333333371"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hUR-7U-2xt">
+                                <rect key="frame" x="59.333333333333343" y="762" width="274.66666666666663" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRz-4N-pgp">
-                                        <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="5" width="178.66666666666666" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5x-71-nIl">
-                                        <rect key="frame" x="182.66666666666669" y="0.0" width="101.33333333333331" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.20784313725490194" green="0.76078431372549016" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-q2-mld" userLabel="RegisterNow">
+                                        <rect key="frame" x="182.66666666666666" y="0.0" width="91.999999999999972" height="30"/>
+                                        <color key="tintColor" red="0.20784313730000001" green="0.76078431369999999" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Register Now"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -152,12 +122,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomLabel1" destination="jRz-4N-pgp" id="L92-y3-SBv"/>
-                        <outlet property="bottomLabel2" destination="H5x-71-nIl" id="S3K-7V-GCN"/>
-                        <outlet property="emailTextField" destination="7mt-WP-52B" id="GAa-h6-2RA"/>
-                        <outlet property="forgotPasswordLabel" destination="TYR-o5-TXX" id="mQa-9h-O60"/>
+                        <outlet property="dontHaveAccountLabel" destination="jRz-4N-pgp" id="Nz2-6w-jBz"/>
+                        <outlet property="forgotPasswordButton" destination="amG-zQ-yg4" id="PgQ-Xt-voA"/>
                         <outlet property="loginButton" destination="WAs-xd-e0E" id="V1T-sJ-PB2"/>
-                        <outlet property="passwordTextField" destination="kJ4-cK-X8l" id="NsX-6I-5ri"/>
+                        <outlet property="registerNowButton" destination="eSA-q2-mld" id="rFr-Mu-4yF"/>
                         <outlet property="welcomeLabel" destination="F1J-DB-FyG" id="PeD-Tv-UoJ"/>
                     </connections>
                 </viewController>
