@@ -19,8 +19,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupFonts()
+        setupUI()
     }
-    
     
     private func setupFonts(){
         //bold fonts
@@ -36,6 +36,9 @@ class LoginViewController: UIViewController {
         dontHaveAccountLabel.font = UIFont.urbanist(size: 14, weight: .regular)
     }
     
+    private func setupUI(){
+        loginButton.layer.cornerRadius = 8
+    }
     
     
 }

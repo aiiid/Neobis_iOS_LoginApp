@@ -13,25 +13,29 @@ class CustomTextField: UITextField {
     private var imageView: UIImageView?
     @IBInspectable var hasRightImage: Bool = false
     
-    // MARK: - Initializers
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit(hasRightImage: false)
+    //    // MARK: - Initializers
+    //    override init(frame: CGRect) {
+    //        super.init(frame: frame)
+    //        commonInit(hasRightImage: false)
+    //    }
+    
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//        commonInit(hasRightImage: hasRightImage)
+//    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupRightImageViewContainer()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        commonInit(hasRightImage: false)
-    }
-    
-    init(hasRightImage: Bool) {
-        super.init(frame: .zero)
-        commonInit(hasRightImage: hasRightImage)
-    }
-    
+    //    init(hasRightImage: Bool) {
+    //        super.init(frame: .zero)
+    //        commonInit(hasRightImage: hasRightImage)
+    //    }
+    //
     private func commonInit(hasRightImage: Bool) {
         self.hasRightImage = hasRightImage
-      //  setupRightImageViewContainer()
+        //  setupRightImageViewContainer()
         setup()
     }
     
